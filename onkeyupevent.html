@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Onkey Event</title>
+</head>
+<body>
+<label>Balance Amount</label>
+<input type="text" id="txt1"  onkeyup="CalculateBalance();" /><br>
+<label>Amount Paid</label>
+<input type="text" id="txt2"  onkeyup="CalculateBalance();" /><br>
+<label>Current Balance</label>
+<input type="text" id="txt3" />
+<script type="text/javascript">
+function CalculateBalance(){
+ var Balanceamount = document.getElementById('txt1').value;
+      var AmountPaid = document.getElementById('txt2').value;
+        var result =Balanceamount-AmountPaid;
+       if (!isNaN(result)) {
+         document.getElementById('txt3').value = result;
+      }
+}
+</script>
+</body>
+</html>
