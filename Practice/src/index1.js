@@ -1,4 +1,4 @@
-function bodyload() {
-    var username = prompt("Enter User Name");
-    document.querySelector("p").innerHTML = "Hello ! ".concat(username);
-}
+var username = "sudarshan";
+username = 34;
+var product = "samsung";
+console.log("Name=".concat(username, "\nProduct=").concat(product));
