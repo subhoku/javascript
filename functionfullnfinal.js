@@ -80,6 +80,26 @@ const myModule=(function(){
     function privateFunction(){
         console.log(privateVar);
     }
-    private function();
-})
+    privateFunction();
+})();
+
+//constructor function
+//to create user object
+
+// Constructor function to create user object
+//"Sudarshan", "sudarshan@codeographsolutions.com"
+function StudentDetails(name, email) {
+    this.name = name;
+    this.email = email;
+    
+    // Method to get student details
+    this.getDetails = function() {
+        return `${this.name} ${this.email}`;
+    };
+}
+
+// Create a new student object using constructor function
+const student1 = new StudentDetails("Sudarshan", "sudarshan@codeographsolutions.com");
+console.log(student1.getDetails());
+
 
