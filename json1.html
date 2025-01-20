@@ -7,13 +7,114 @@
 </head>
 <body>
     <h1>Welcome to Codeograph Solutions</h1>
-    <script>
+    <!-- <script>
         let obj = {
             "sub_one": "React Js",
             "sub_two": "Angular 19",
             "sub_three": "Mongo DB"
         };
         console.log(obj.sub_one, obj.sub_two, obj.sub_three);
+        //Automatically we can access the data
+        </script> -->
+        
+        <!-- <script>
+          let obj = {
+            "sub_one": "React Js",
+            "sub_two": "Angular 19",
+            "sub_three": "Mongo DB"
+        };
+        for(let i in obj){
+            console.log(i);
+         console.log( typeof i);  //string type
+        }
+       
+        </script> -->
+
+        <!-- <script>
+         let obj={
+            "obj1":{
+                "sub_one": "React Js",
+            "sub_two": "Angular 19",
+            "sub_three": "Mongo DB"
+            }
+         }
+          for (let key in obj.obj1){
+            console.log(obj.obj1[key]);
+          }
+            //object 1 is json object I need the value
+        </script> -->
+<!--       
+      <script>
+          let obj={
+            "oracle" : oracle,
+            "mysql"  :mysql,
+            "postgresql" : postgresql,
+            "mongodb" : mongodb
+        
+        };
+        function oracle(){
+            return "Oracle connection soon";
+        }
+        function mysql(){
+            return "Mysql connection soon";
+        }
+        function postgresql(){
+            return "PostGre sql connection soon";
+        }
+        function mongodb(){
+            return " Mongodb connection soon..";
+        }
+        console.log(obj.oracle(),obj.mysql(),obj.mongodb(),obj.postgresql());
+      </script> -->
+<!-- 
+      <script>
+
+let obj = {
+            "sub_one": "React Js",
+            "sub_two": "Angular 19",
+            "sub_three": "Mongo DB"
+        };
+        console.log(Object.keys(obj));
+        console.log(Object.values(obj));
+
+
+
+      </script> -->
+
+      <!-- <script>
+        let obj1={
+            "key1" : "Hello_1"
+        };
+        let obj2={...obj1};
+        obj1.key1="Orignal Aadhar card";
+        obj2.key1="xerox copy";
+        console.log(Object.values(obj1));
+        console.log(Object.values(obj2));
+             //if you do the changes in key1 it will effect on obj 2
+             //xerox machine example 
+      </script> -->
+
+ <script>
+
+let obj = {
+            "sub_one": "React Js",
+            "sub_two": "Angular 19",
+            "sub_three": "Mongo DB"
+        };
+
+        Object.seal(obj);
+        //read the obj
+        console.log(obj);
+        //add
+        obj.sub_four="Data Science";
+        console.log(obj);
+
+        //update
+        obj.sub_three="Blockchain";
+        console.log(obj);
+        //delete
+        delete obj.sub_one;
+        console.log(obj);
         </script>
         
 </body>
