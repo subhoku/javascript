@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+ let obj={
+    "key1" : "Value1",
+    "key2" : "value2"
+ }
+ console.log(obj);
+//key1 : "Value1",....
+
+    </script> -->
+
+    <!-- <script>
+
+        let obj={
+            "key1" : "Hello1",
+            "key2" : "Hello2",
+            "key3" : "Hello3",
+        };
+        console.log(obj.key1,obj.key2,obj.key3);
+        //dot notation
+        //Hello1 Hello2 Hello3
+        console.log(obj["key1"],obj["key2"],obj["key3"]);
+        //square bracket notation
+        let{key1,key2,key3}=obj;
+        console.log(key1,key2,key3);
+        //for each loop
+        for(let key in obj){
+            console.log(obj[key]);
+        }
+    </script> -->
+
+    <script>
+let myson_function={
+    "money":{"amount":1000},
+    "gold": {"weight" : "1gr"},
+    "book": {"company":"react"},
+    "Pen" :{"company1" : "Renolds"}
+}
+//box ==> object add
+//break the gold box, money box, pen box
+let{money,gold,book,Pen}=myson_function;
+let{amount}=money;
+let{weight}=gold;
+let{company}=book;
+let{company1}=Pen;
+console.log(amount,weight,company,company1);
+    </script>
+</body>
+</html>
