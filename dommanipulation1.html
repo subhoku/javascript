@@ -1,0 +1,14 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$.ajax({
+    method: "POST", // Use uppercase
+    url: "https://test-routes.herokuapp.com/test/uppercase",
+    data: { "message": "Welcome to JavaScript" }, // Ensure correct data format
+    success: (posRep) => {
+        console.log(posRep); // Log the positive response
+    },
+    error: (errorRep) => {
+        console.log(errorRep); // Log the error response
+    }
+});
+</script>
